@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>U-TAD - Master de Telefonica Big Data - Trabajo 2</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>Aerolineas</h1>
+		<h2>Ranking de actividad y facturación de aerolíneas que operan en España</h2>
+
+		<!-- Select box  -->
+		<form class="form-inline">
+			<div class="form-group">
+		    <label for="rankingType">Group by</label>
+		    <select class="form-control" id="ranking-type">
+				  <option value="viajeros">Viajeros/mes</option>
+				  <option value="facturacion">Facturación (Millones €)</option>
+			</select>
+			<input type="button" id="ordenar" onclick="ordenar_data()" value="Orden >>">
+
+		  </div>
+		</form>
+		
+		<div id="chart-area"></div>
+
+	</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
